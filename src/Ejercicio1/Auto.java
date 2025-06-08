@@ -25,6 +25,7 @@ public class Auto implements Vehiculo {
         this.velocidadActual = velocidadActual;
     }
 
+    @Override
     public void arrancar(){
         if (getEncendido()) {
             System.out.println("El vehiculo ya se encuentra encendido");
@@ -34,6 +35,7 @@ public class Auto implements Vehiculo {
         }
     }
 
+    @Override
     public void acelerar(int velocidad){
         if (getEncendido() == false){
             System.out.println("El vehiculo esta apagado, debes arrancar.");
@@ -43,6 +45,7 @@ public class Auto implements Vehiculo {
         }
     }
 
+    @Override
     public void frenar() {
         if (getVelocidadActual() == 0) {
             System.out.println("El auto no esta en movimiento, no hay necesidad de frenar.");
