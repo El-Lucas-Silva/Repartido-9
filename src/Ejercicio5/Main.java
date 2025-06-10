@@ -5,7 +5,10 @@ public class Main {
         EntradaGeneral g1 = new EntradaGeneral("75", 17);
         EntradaVIP VIP1 = new EntradaVIP("65", 27);
 
+        g1.mostrarDatos();
         System.out.println(g1.validarEntrada());
+        System.out.println("------------------------");
+        VIP1.mostrarDatos();
         System.out.println(VIP1.validarEntrada());
     }
 }
